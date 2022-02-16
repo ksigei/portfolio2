@@ -1,0 +1,88 @@
+.header-img-left {
+    position: absolute;
+    width: 111px;
+    height: 74px;
+    left: 0;
+    top: 0;
+  }
+  
+  .header-nav-lg {
+    position: absolute;
+    width: 20px;
+    height: 14px;
+    left: 284px;
+    top: 19px;
+    background: #1a2236;
+  }
+  
+  .about-container {
+    position: absolute;
+    width: 288px;
+    height: 336px;
+    left: 16px;
+    top: 104px;
+  }
+  
+  .header-my-name {
+    width: 220px;
+    height: 100px;
+    left: 16px;
+    top: 104px;
+  }
+  
+  .header-my-name h1 {
+    font-family: Playfair Display, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 100%;
+    color: #1a2236;
+  }
+  
+  .header-about {
+    width: 288px;
+    height: 126px;
+    left: 16px;
+    top: 224px;
+  }
+  
+  .aboutme {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #1a2236;
+  }
+  
+  .header-btn {
+    width: 288px;
+    height: 50px;
+    left: 16px;
+    top: 390px;
+    background: #1a2236;
+  }
+  
+  button {
+    width: 288px;
+    height: 50px;
+    left: 16px;
+    top: 390px;
+    background: #1a2236;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  
+  .header-img-bottom {
+    position: absolute;
+    width: 320px;
+    height: 160px;
+    left: 0;
+    top: 472px;
+  }
