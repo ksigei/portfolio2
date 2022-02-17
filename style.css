@@ -255,21 +255,21 @@
     margin-top: 40px;
   }
 
-  #content-list {
+  .content-list {
     margin-left: 50px;
     color: #fff;
     padding-top: 50px;
   }
 
-  #content-list h3 {
+  .content-list h3 {
     margin-left: 27px;
   }
 
-  #content-list ul {
+  .content-list ul {
     margin-top: 20px;
   }
 
-  #content-list ul li {
+  .content-list ul li {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 600;
