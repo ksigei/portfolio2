@@ -2,22 +2,24 @@
   .header-top {
     display: flex;
   }
+
   .header-img-left {
     width: 111px;
     height: 74px;
     margin-left: 0;
   }
-  
+
   .header-nav-lg {
     width: 20px;
     height: 14px;
-    color: #C4C4C4;
+    color: #c4c4c4;
     margin-left: 174px;
   }
+
   .header-nav-lg a {
-    color: #C4C4C4;
-  } 
-  
+    color: #c4c4c4;
+  }
+
   .about-container {
     display: flex;
     flex-direction: column;
@@ -25,13 +27,13 @@
     margin-left: 16px;
     margin-right: 16px;
   }
-  
+
   .header-my-name {
     width: 220px;
     height: 100px;
     margin-bottom: 20px;
   }
-  
+
   .header-my-name h1 {
     font-family: "Playfair Display", Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -40,14 +42,14 @@
     line-height: 100%;
     color: #1a2236;
   }
-  
+
   .header-about {
     width: 288px;
     height: 126px;
     margin-top: 20px;
     margin-bottom: 40px;
   }
-  
+
   .aboutme {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -57,14 +59,14 @@
     letter-spacing: -0.01em;
     color: #1a2236;
   }
-  
+
   .header-btn {
     width: 288px;
     height: 50px;
     margin-left: 16px;
     background: #1a2236;
   }
-  
+
   #btn-collabo {
     width: 288px;
     height: 50px;
@@ -79,12 +81,11 @@
     border: none;
     cursor: pointer;
   }
-  
+
   .header-img-bottom {
     width: 320px;
     height: 160px;
     margin-left: 0;
     margin-top: 32px;
   }
-  
 }
