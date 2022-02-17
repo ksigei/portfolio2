@@ -103,13 +103,6 @@
     flex-direction: column;
   }
 
-  .union {
-    width: 20.57px;
-    height: 15.35px;
-    margin-left: 166px;
-    background: #fff;
-  }
-
   .project-img {
     width: 320px;
     height: 186px;
@@ -166,7 +159,7 @@
     color: #1a2236;
   }
 
-  #project-view {
+  .project-view {
     margin-top: 20px;
     background-color: #1a2236;
     border: 1px solid #fff;
