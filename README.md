@@ -2,9 +2,13 @@
 
 # Project Name
 
-> Milestone 1 on portfolio mobile version
+> Milestone 2 on portfolio mobile version
 
 ![screenshot](./images/screenshot.png)
+![screenshot](./images/screenshot1.png)
+![screenshot](./images/screenshot2.png)
+![screenshot](./images/screenshot3.png)
+
 
 ## Built With
 
@@ -12,7 +16,7 @@
 - CSS
 - Linters
 
-**This is an documenttation of milestone 1 on portfolio mobile version.**
+**This is an documenttation of milestone 2 on portfolio mobile version.**
 
 ## Author
 
