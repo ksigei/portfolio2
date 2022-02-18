@@ -95,8 +95,13 @@
 
   /* sections */
   .projects {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas:
+    'projects-wrapper'
+    
+   ;
+    gap: 0;
+    padding: 0;
     margin-top: 40px;
   }
   .title {
