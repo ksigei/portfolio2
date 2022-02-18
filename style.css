@@ -96,14 +96,12 @@
   /* sections */
   .projects {
     display: grid;
-    grid-template-areas:
-    'projects-wrapper'
-    
-   ;
+    grid-template-areas: 'projects-wrapper';
     gap: 0;
     padding: 0;
     margin-top: 40px;
   }
+
   .title {
     height: 50px;
     margin-left: 16px;
@@ -112,9 +110,10 @@
     font-weight: normal;
     font-size: 50px;
     line-height: 100%;
-    color: #1A2236;
+    color: #1a2236;
     margin-bottom: 32px;
   }
+
   .projects-wrapper {
     display: flex;
     flex-direction: column;
@@ -146,6 +145,7 @@
     height: 156px;
     margin-left: 20px;
   }
+
   .project-lg-1 h3 {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -157,23 +157,27 @@
     margin-bottom: 16px;
     margin-left: 0;
   }
+
   .list-languages {
-   margin-left: -43px;
+    margin-left: -43px;
   }
+
   .list-languages ul {
     display: flex;
-    list-style: none; 
+    list-style: none;
     width: 300px;
   }
+
   .list-languages ul li {
-    background: #98DEDE;
+    background: #98dede;
     height: 20px;
     margin: 0 5px;
   }
+
   .project-view {
     margin-top: 20px;
     background-color: #1a2236;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #fff;
     width: 178px;
     height: 44px;
     padding-top: 10px;
@@ -191,9 +195,11 @@
     text-align: center;
     color: #fff;
   }
+
   .project-view img {
     padding-left: 12px;
   }
+
   /* about */
   .about {
     display: flex;
@@ -280,12 +286,12 @@
 
   .content-list h3 {
     margin-left: 27px;
-    font-family: Poppins, Poppins, Arial, Helvetica, sans-serif;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
     line-height: 30px;
-    color: #FFFFFF;
+    color: #fff;
   }
 
   .content-list ul {
@@ -322,5 +328,4 @@
     width: 96px;
     height: 80px;
   }
-  
 }
