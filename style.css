@@ -38,7 +38,7 @@
     margin-top: 36px;
   }
 
-  .header-my-name hx {
+  .header-my-name h3 {
     font-family: "Playfair Display", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -146,7 +146,7 @@
     height: 156px;
     margin-left: 20px;
   }
-  .project-lg-1 hx {
+  .project-lg-1 h3 {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -208,10 +208,8 @@
     height: 278px;
   }
 
-  .about-me hx {
+  .about-me h3 {
     width: 134px;
-    /* height: 50px; */
-    margin-top: 56px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -280,7 +278,7 @@
     padding-top: 50px;
   }
 
-  .content-list hx {
+  .content-list h3 {
     margin-left: 27px;
     font-family: Poppins, Poppins, Arial, Helvetica, sans-serif;
     font-style: normal;
