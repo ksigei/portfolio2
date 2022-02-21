@@ -328,4 +328,12 @@
     width: 96px;
     height: 80px;
   }
+  /* footer and contact */
+  .footer {
+    margin-top: 50px;
+    width: 320px;
+    height: 813px;
+    margin-left: -2px;
+    background: #F9F9FA;
+  }
 }
