@@ -336,4 +336,100 @@
     margin-left: -2px;
     background: #F9F9FA;
   }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;
+    margin-right: 14px;
+    margin-top: 32px;
+  }
+  .contact-description {
+
+  }
+  .contact-description h3 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 100%;
+    color: #1A2236;
+    margin-bottom: 20px;
+  }
+  .contact-description p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #1A2236;
+    margin-bottom: 32px;
+  }
+  form {
+    padding-bottom: 8px;
+  }
+  form #name {
+    background: #FFFFFF;
+    border: 1px solid #DFDFE0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 288px;
+    height: 52px;
+  }
+  form #email {
+    background: #FFFFFF;
+    border: 1px solid #DFDFE0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 288px;
+    height: 52px;
+    margin-top: 8px;
+  }
+  form textarea {
+    width: 288px;
+    height: 112px;
+    background: #FFFFFF;
+    border: 1px solid #DFDFE0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+  .social-footer {
+
+    width: 320px;
+    height: 150px;
+    margin-left: 0px;
+    margin-top: 44px;
+    margin-bottom: 0px;
+    background: #1A2236;
+  }
+  .social-footer ul {
+    display: flex;
+    list-style-type: none;
+    width: 253px;
+  }
+  .social-footer ul li {
+    color: #FFFFFF;
+  }
+  .social-footer :nth-last-child(1) {
+    padding-left: 16px;
+  }
+  .social-container {
+    display: flex;
+    flex-direction: column;
+    border-top: 32px solid #1A2236;
+    border-bottom: 40px solid #1A2236;
+    border-left: 16px solid #1A2236;
+    border-right: 16px solid #1A2236;
+  }
+  .social-container p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #92DCDC;
+    margin-bottom: 20px;
+  }
 }
