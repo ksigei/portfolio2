@@ -6,8 +6,8 @@
 
 ![screenshot](./images/screenshot.png)
 ![screenshot](./images/screenshot1.png)
-![screenshot](./images/screenshot2.png)
-![screenshot](./images/screenshot3.png)
+![screenshot](./images/contact-scrn.png)
+![screenshot](./images/footer-scrn.png)
 
 
 ## Built With
