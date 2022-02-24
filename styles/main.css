@@ -399,7 +399,7 @@ ul {
     padding-bottom: 8px;
   }
 
-  form #name {
+  form .name {
     background: #fff;
     border: 1px solid #dfdfe0;
     box-sizing: border-box;
@@ -408,7 +408,7 @@ ul {
     height: 52px;
   }
 
-  form #email {
+  form .email {
     background: #fff;
     border: 1px solid #dfdfe0;
     box-sizing: border-box;
@@ -848,7 +848,7 @@ ul {
     border-radius: 4px;
   }
 
-  .contact #name {
+  .contact .name {
     margin-right: 10px;
   }
 
