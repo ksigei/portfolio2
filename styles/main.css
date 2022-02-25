@@ -29,6 +29,10 @@ ul {
   cursor: pointer;
 }
 
+.cursor:hover {
+  background-color: rgb(46, 175, 158);
+}
+
 input[type="text"],
 [type="email"]::placeholder {
   padding-left: 10px;
