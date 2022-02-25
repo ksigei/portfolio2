@@ -16,7 +16,7 @@
 - CSS
 - Linters
 
-**This is an documenttation of milestone 2 on portfolio mobile version.**
+**This is an documenttation of desktop verssion on portfolio.**
 
 ## Author
 
