@@ -29,6 +29,16 @@ ul {
   cursor: pointer;
 }
 
+input[type="text"],
+[type="email"]::placeholder {
+  padding-left: 10px;
+  padding-top: 0;
+}
+
+textarea::placeholder {
+  padding: 15px;
+}
+
 @media (max-width: 992px) {
   .display-none {
     display: none;
@@ -215,8 +225,18 @@ ul {
   .list-languages ul li {
     background: #98dede;
     font-size: smaller;
-    height: 20px;
+    height: 25px;
+    width: 90px;
     margin: 0 5px;
+    padding: 3px;
+  }
+
+  .list-languages ul li:first-child {
+    width: 75px;
+  }
+
+  .list-languages ul li:last-child {
+    width: 70px;
   }
 
   .project-view {
@@ -343,15 +363,6 @@ ul {
     margin-top: 20px;
   }
 
-  .content-list ul li {
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
-    letter-spacing: -0.0525em;
-  }
-
   .frameworks {
     display: flex;
     flex-direction: column;
@@ -464,14 +475,6 @@ ul {
     align-self: center;
   }
 
-  .social-footer ul li {
-    color: #fff;
-    margin-left: 0;
-    padding-left: 10px;
-    margin-right: 0;
-    padding-right: 0;
-  }
-
   .social-container {
     display: flex;
     flex-direction: column;
@@ -479,6 +482,7 @@ ul {
     border-bottom: 40px solid #1a2236;
     border-left: 16px solid #1a2236;
     border-right: 16px solid #1a2236;
+    margin-top: 180px;
   }
 
   .social-container p {
@@ -544,20 +548,20 @@ ul {
     letter-spacing: -0.0525em;
   }
 
-  .social-footer ul li {
-    color: #fff;
-    margin-left: 0;
-    padding-left: 10px;
-    margin-right: 0;
-    padding-right: 0;
-  }
-
   .list-languages ul li {
     background: #98dede;
     font-size: smaller;
     height: 40px;
     width: 24%;
     margin: 0 20px;
+  }
+
+  .social-footer ul li {
+    color: #fff;
+    margin-left: 0;
+    padding-left: 10px;
+    margin-right: 0;
+    padding-right: 0;
   }
 
   .desk-nav ul li:first-child {
