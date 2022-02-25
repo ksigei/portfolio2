@@ -598,7 +598,6 @@ ul {
     color: #1a2236;
   }
 
-
   .aboutme {
     font-family: "Playfair Display", Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -1122,9 +1121,6 @@ ul {
     margin-top: 34px;
   }
 
-
-
-
   .item3 {
     grid-column: 1 / span 3;
     grid-row: 2;
@@ -1268,8 +1264,6 @@ ul {
     margin-left: 96px;
     margin-top: 28px;
   }
-
-
 
   .about-me-dsk button {
     width: 50%;
