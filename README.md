@@ -18,6 +18,22 @@
 
 **This is an documenttation of desktop verssion on portfolio.**
 
+## Live Demo
+
+[Live Demo Link](https://ksigei.github.io/portfolio2/)
+
+
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+Clone the repo to your local machine.
+
+git clone https://github.com/ksigeiportfolio2.git
+
+cd Portfolio
+
 ## Author
 
 - GitHub: [@ksigei](https://github.com/ksigei)
