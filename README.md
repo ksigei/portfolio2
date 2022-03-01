@@ -32,7 +32,7 @@ Clone the repo to your local machine.
 
 git clone https://github.com/ksigeiportfolio2.git
 
-cd Portfolio
+cd portfolio2
 
 ## Author
 
