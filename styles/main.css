@@ -21,12 +21,20 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  background-color: rgb(46, 175, 158);
+}
+
 ul {
   list-style: none;
 }
 
 .cursor {
   cursor: pointer;
+}
+
+.cursor:hover {
+  background-color: rgb(46, 175, 158);
 }
 
 input[type="text"],
