@@ -8,6 +8,7 @@
 ![screenshot](./images/screenshot1.png)
 ![screenshot](./images/contact-scrn.png)
 ![screenshot](./images/footer-scrn.png)
+![screenshot](./images/footer-scrn.png)
 
 
 ## Built With
@@ -16,7 +17,7 @@
 - CSS
 - Linters
 
-**This is an documenttation of desktop verssion on portfolio.**
+**This is an documentation of accessibilty version portfolio.**
 
 ## Live Demo
 
