@@ -22,11 +22,20 @@ a {
 }
 
 a:hover {
-  background-color: rgb(46, 175, 158);
+  font-size: large;
+  font-weight: bold;
 }
 
 ul {
   list-style: none;
+}
+
+.header-hover:hover {
+  background-color: #1a2236;
+}
+
+.header-hover:hover a{
+  color: #fff;
 }
 
 .cursor {
@@ -35,6 +44,8 @@ ul {
 
 .cursor:hover {
   background-color: rgb(46, 175, 158);
+  font-size: larger;
+  font-weight: bold;
 }
 
 input[type="text"],
@@ -609,6 +620,11 @@ textarea::placeholder {
     line-height: 100%;
     color: #1a2236;
   }
+
+  .header-my-name h3:hover {
+    color: #e2505c;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  } 
 
   .aboutme {
     font-family: "Playfair Display", Arial, Helvetica, sans-serif;
