@@ -16,26 +16,37 @@
     <title>Kip's portfolio</title>
     <script src="https://use.fontawesome.com/d8efa21dfe.js"></script>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/menu.css">
+
 </head>
 <body>
     <div class="container">
         <header class="header-container">
-            <div class="header-top header-hover">
-             <div class="header-img-left">
-                 <img src="images/image_geometry_1.png" alt="image">
-             </div>
-             <nav id="header-nav-lg">
-                 <a href="#" id="nav-expand-lg"><i class="fa fa-bars"></i></a>
-             </nav>
-            </div>
-            <div class="desk-nav header-hover">
-                <ul>
-                 <li><a href="#hello">Hello</a></li>
-                 <li><a href="#projects">Portfolio</a></li>
-                 <li><a href="#about">About</a></li>
-                 <li><a href="#contact">Contact</a></li>
+            
+            
+            <nav class="navbar">
+                <div class="header-img-left">
+                        <img src="images/image_geometry_1.png" alt="image">
+                </div>
+                <!-- <div class="nav-branding">logo</div> -->
+                <div class="hamburger">
+                    <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a> -->
+                    <!-- <button type="button" name="button" onclick="showMenu()"><i class="fa fa-bars"></i></button> -->
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#hello" class="nav-link">Hello</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
-            </div>
+                
+                
+            </nav>
            <section class="about-container" id="hello">
              <div class="desk-about">
                  <div class="header-my-name">
@@ -407,6 +418,6 @@
              </div>
          </footer>      
     </div>
-
+    <script src="./scripts/menu.js"></script>
 </body>
 </html>
