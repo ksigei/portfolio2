@@ -71,7 +71,6 @@ textarea::placeholder {
   opacity: 1;
   transition: all 3s ease-in;
   visibility: visible;
-  border-radius: 1px solid rgb(240, 6, 6);
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
