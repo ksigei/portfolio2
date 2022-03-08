@@ -58,6 +58,29 @@ textarea::placeholder {
   padding: 15px;
 }
 
+.fadeOut {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+#errorMessage {
+  align-self: center;
+  height: 40vh;
+  width: 100%;
+  background-color: rgb(240, 6, 6);
+  opacity: 1;
+  transition: all 3s ease-in;
+  visibility: visible;
+  border-radius: 1px solid rgb(240, 6, 6);
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8em;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-align: center;
+}
+
 @media (max-width: 992px) {
   .display-none {
     display: none;

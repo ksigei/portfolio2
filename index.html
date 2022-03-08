@@ -377,12 +377,11 @@
                         <h3>Get started</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                     </div>
-                    <form action="https://formspree.io/f/xbjwgkqr" method="post">
-                        <input type="text" name="name" class="name" placeholder="Your name" maxlength="30" required>
-                        <input type="email" name="email" class="email" placeholder="Your email" required>
-                        <textarea name="message" class="msg" cols="30" rows="10" placeholder="Enter your message here..." maxlength="500" required></textarea>
-                        <button class="btn-collabo-desk btn-collabo" type="submit" name="submit">Start collaboration</button>
-        
+                    <form id="myForm" action="https://formspree.io/f/xbjwgkqr" method="post">
+                        <input onkeypress="keypress()" type="text" name="name" class="name" placeholder="Your name" maxlength="30" required>
+                        <input onkeypress="keypress()" type="email" name="email" class="email" placeholder="Your email" required>
+                        <textarea onkeypress="keypress()" name="message" class="msg" cols="30" rows="10" placeholder="Enter your message here..." maxlength="500" required></textarea>
+                        <button onclick="validateMail()" class="btn-collabo-desk btn-collabo" type="submit" name="submit">Start collaboration</button>
                     </form>
                 </div>
                 <div class="img-cont-dsk-right display-none">
@@ -407,6 +406,6 @@
              </div>
          </footer>      
     </div>
-
+    <script src="validate.js"></script>
 </body>
 </html>
