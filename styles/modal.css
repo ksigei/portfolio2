@@ -192,11 +192,6 @@ a {
   transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15);
 }
 
-[data-animation].is-visible .modal-dialog {
-  opacity: 1;
-  transition-delay: 0.2s;
-}
-
 [data-animation="slideInOutTop"] .modal-dialog {
   transform: translateY(-100%);
 }
@@ -216,6 +211,11 @@ a {
 [data-animation="rotateInOutDown"] .modal-dialog {
   transform-origin: top left;
   transform: rotate(-1turn);
+}
+
+[data-animation].is-visible .modal-dialog {
+  opacity: 1;
+  transition-delay: 0.2s;
 }
 
 [data-animation="mixInAnimations"].is-visible .modal-dialog {
@@ -314,8 +314,6 @@ a {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    text-align: center;
-    border: none;
     cursor: pointer;
   }
 
