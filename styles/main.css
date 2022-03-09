@@ -162,8 +162,8 @@ textarea::placeholder {
     background: #1a2236;
   }
 
-  .btn-collabo {
-    width: 288px;
+  /* .btn-group {
+    width: 80%;
     height: 50px;
     background: #1a2236;
     font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -175,7 +175,7 @@ textarea::placeholder {
     color: rgb(255 255 255);
     border: none;
     cursor: pointer;
-  }
+  } */
 
   .header-img-bottom {
     width: 320px;
