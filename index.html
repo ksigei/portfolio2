@@ -16,6 +16,7 @@
     <title>Kip's portfolio</title>
     <script src="https://use.fontawesome.com/d8efa21dfe.js"></script>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/modal.css">
 </head>
 <body>
     <div class="container">
@@ -82,8 +83,8 @@
                                 <li><span>JavaScript</span></li>
                             </ul>
                         </div>
-                        <div class="project-view">
-                                <span class="project-view-union cursor">See this project</span>
+                        <div class="btn-group">
+                                <span class="project-view-union cursor open-modal" data-open="modal2">See this project</span>
                                 
                                 <span><img src="images/Union.png" alt="union"></span>
                         </div>
@@ -105,10 +106,10 @@
                                 <li><span>JavaScript</span></li>
                             </ul>
                         </div>
-                        <div class="project-view">
-                                <span class="project-view-union cursor">See this project</span>
-                                
-                                <span><img src="images/Union.png" alt="union"></span>
+                        <div class="btn-group">
+                            <span class="project-view-union cursor open-modal" data-open="modal2">See this project</span>
+                            
+                            <span><img src="images/Union.png" alt="union"></span>
                         </div>
                       </div>
                     </div>
@@ -128,10 +129,10 @@
                                 <li><span>JavaScript</span></li>
                             </ul>
                         </div>
-                        <div class="project-view">
-                                <span class="project-view-union cursor">See this project</span>
-                                
-                                <span><img src="images/Union.png" alt="union"></span>
+                        <div class="btn-group">
+                            <span class="project-view-union cursor open-modal" data-open="modal2">See this project</span>
+                            
+                            <span><img src="images/Union.png" alt="union"></span>
                         </div>
                       </div>
                     </div>
@@ -151,10 +152,10 @@
                                 <li><span>JavaScript</span></li>
                             </ul>
                         </div>
-                        <div class="project-view">
-                                <span class="project-view-union cursor">See this project</span>
-                                
-                                <span><img src="images/Union.png" alt="union"></span>
+                        <div class="btn-group">
+                            <span class="project-view-union cursor open-modal" data-open="modal2">See this project</span>
+                            
+                            <span><img src="images/Union.png" alt="union"></span>
                         </div>
                       </div>
                     </div>
@@ -174,10 +175,10 @@
                                 <li><span>JavaScript</span></li>
                             </ul>
                         </div>
-                        <div class="project-view">
-                                <span class="project-view-union cursor">See this project</span>
-                                
-                                <span><img src="images/Union.png" alt="union"></span>
+                        <div class="btn-group">
+                            <span class="project-view-union cursor open-modal" data-open="modal2">See this project</span>
+                            
+                            <span><img src="images/Union.png" alt="union"></span>
                         </div>
                       </div>
                     </div>
@@ -197,15 +198,16 @@
                                 <li><span>JavaScript</span></li>
                             </ul>
                         </div>
-                        <div class="project-view">
-                                <span class="project-view-union cursor">See this project</span>
-                                
-                                <span><img src="images/Union.png" alt="union"></span>
-                        </div>
+                        <div class="btn-group">
+                            <span class="project-view-union cursor open-modal" data-open="modal2">See this project</span>
+                            
+                            <span><img src="images/Union.png" alt="union"></span>
+                        </div>  
                       </div>
                     </div>
                 </div>
             </section>
+            
             <section class="desk-projects">
                 <div class="grid-container">
                     <div class="grid-item item1">
@@ -227,11 +229,11 @@
                                    <li class="langs-li-dsk cursor"><p>JavaScript</p></li>
                                </ul>
                            </div>
-                           <div class="project-view">
-                                   <span class="project-view-union cursor">See this project</span>
-                                   
-                                   <span><i class="fa fa-arrow-right"></i></span>
-                           </div>
+                           <div class="btn-group project-view">
+                            <span class="project-view-union cursor open-modal" data-open="modal2">See this project</span>
+                            
+                            <span><img src="images/Union.png" alt="union"></span>
+                    </div>
                        </div>
                     </div>
                     <div class="grid-item item3">
@@ -293,7 +295,51 @@
                     </div>
                   </div>
             </section>
+            <div class="modal" id="modal2" data-animation="mixInAnimations">
+                <div class="modal-dialog">
+                  <header class="modal-header">
+                    <button class="close-modal" aria-label="close modal" data-close>
+                      ✕  
+                    </button>
+                  </header>
+                  <section class="modal-content">
+                    <h3>Project name goes here</h3> 
+                    <div class="list-languages">
+                        <ul>
+                            <li class="langs-li-dsk cursor"><p>HTML/CSS</p></li>
+                            <li class="langs-li-dsk cursor"><p>Ruby on Rails</p></li>
+                            <li class="langs-li-dsk cursor"><p>JavaScript</p></li>
+                        </ul>
+                    </div>
+                    <div class="modal-carousel">
+                        <img src="./images/carousel.svg" alt="">
+                    </div>
+                    
+                    <div class="modal-description">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                        </p>
+    
+                    </div>
+                    
+                    <div class="modal-btns">
+                        <div class="btn-1">
+                            <a href="#">
+                                <p>See Live <span><img src="./images/resume.png" alt="image"/></span></p>
+                            </a>
+                        </div>
+                        <div class="btn-1">
+                            <a href="#">
+                                <p>See Source <span><img src="./images/github.png" alt="image"/></span></p>
+                            </a>
+                        </div>
+                    </div>
+                    </section>
+                  
+                </div>
+            </div>
          </section>
+         
          <section class="about" id="about">
              <div class="about-me">
                  <h3>About</h3>
@@ -377,11 +423,12 @@
                         <h3>Get started</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                     </div>
-                    <form id="myForm" action="https://formspree.io/f/xbjwgkqr" method="post">
-                        <input onkeypress="keypress()" type="text" name="name" class="name" placeholder="Your name" maxlength="30" required>
-                        <input onkeypress="keypress()" type="email" name="email" class="email" placeholder="Your email" required>
-                        <textarea onkeypress="keypress()" name="message" class="msg" cols="30" rows="10" placeholder="Enter your message here..." maxlength="500" required></textarea>
-                        <button onclick="validateMail()" class="btn-collabo-desk btn-collabo" type="submit" name="submit">Start collaboration</button>
+                    <form action="https://formspree.io/f/xbjwgkqr" id="myForm" method="post">
+                      
+                        <input type="text" name="name" class="name" maxlength="30" placeholder="Your name" required>
+                        <input type="email" name="email" class="email" placeholder="Your email"  required>
+                        <textarea name="message" class="msg" maxlength="500" placeholder="Enter your message here..." required></textarea>
+                        <button onclick="validateMail()" class="btn-collabo" type="submit" name="submit">Start collaboration</button>
                     </form>
                 </div>
                 <div class="img-cont-dsk-right display-none">
@@ -408,5 +455,6 @@
     </div>
     <script src="./scripts/validate.js"></script>
     <script src="./scripts/storage.js"></script>
+    <script src="./scripts/modal.js"></script>
 </body>
 </html>

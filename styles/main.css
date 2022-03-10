@@ -80,7 +80,7 @@ textarea::placeholder {
   text-align: center;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .display-none {
     display: none;
   }
@@ -162,9 +162,16 @@ textarea::placeholder {
     background: #1a2236;
   }
 
+  .header-img-bottom {
+    width: 320px;
+    height: 160px;
+    margin-left: 0;
+    margin-top: 32px;
+  }
+
   .btn-collabo {
-    width: 288px;
-    height: 50px;
+    width: 65%;
+    height: 10vh;
     background: #1a2236;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -175,13 +182,6 @@ textarea::placeholder {
     color: rgb(255 255 255);
     border: none;
     cursor: pointer;
-  }
-
-  .header-img-bottom {
-    width: 320px;
-    height: 160px;
-    margin-left: 0;
-    margin-top: 32px;
   }
 
   /* sections */
@@ -261,6 +261,7 @@ textarea::placeholder {
     display: flex;
     list-style: none;
     width: 300px;
+    margin-bottom: 20px;
   }
 
   .list-languages ul li {
@@ -303,7 +304,7 @@ textarea::placeholder {
   }
 
   .project-view img {
-    padding-left: 12px;
+    padding-left: 2px;
   }
 
   /* about */
@@ -544,7 +545,7 @@ textarea::placeholder {
 }
 
 /* desktop version min-992 */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .container {
     width: 100%;
   }
@@ -1119,7 +1120,7 @@ textarea::placeholder {
     margin-left: 40px;
     background-color: #fff;
     border: 1px solid #fff;
-    width: 37%;
+    width: 50%;
     height: 44px;
     padding-top: 10px;
     padding-bottom: 10px;
