@@ -229,7 +229,7 @@
                                    <li class="langs-li-dsk cursor"><p>JavaScript</p></li>
                                </ul>
                            </div>
-                           <div class="btn-group">
+                           <div class="btn-group project-view">
                             <span class="project-view-union cursor open-modal" data-open="modal2">See this project</span>
                             
                             <span><img src="images/Union.png" alt="union"></span>
@@ -423,11 +423,12 @@
                         <h3>Get started</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                     </div>
-                    <form id="myForm" action="https://formspree.io/f/xbjwgkqr" method="post">
-                        <input onkeypress="keypress()" type="text" name="name" class="name" placeholder="Your name" maxlength="30" required>
-                        <input onkeypress="keypress()" type="email" name="email" class="email" placeholder="Your email" required>
-                        <textarea onkeypress="keypress()" name="message" class="msg" cols="30" rows="10" placeholder="Enter your message here..." maxlength="500" required></textarea>
-                        <button onclick="validateMail()" class="btn-collabo-desk btn-collabo" type="submit" name="submit">Start collaboration</button>
+                    <form action="https://formspree.io/f/xbjwgkqr" id="myForm" method="post">
+                      
+                        <input type="text" name="name" class="name" maxlength="30" placeholder="Your name" required>
+                        <input type="email" name="email" class="email" placeholder="Your email"  required>
+                        <textarea name="message" class="msg" maxlength="500" placeholder="Enter your message here..." required></textarea>
+                        <button onclick="validateMail()" class="btn-collabo" type="submit" name="submit">Start collaboration</button>
                     </form>
                 </div>
                 <div class="img-cont-dsk-right display-none">
