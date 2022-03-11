@@ -8,15 +8,18 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
-  /* button {
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: inherit;
-  } */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
 
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+@media (max-width: 768px) {
   h3 {
     font-family: Poppins, Arial, sans-serif;
     font-style: normal;
@@ -52,6 +55,7 @@ a {
   .modal {
     position: fixed;
     top: 0;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -59,7 +63,8 @@ a {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    background: #1a2236;
+    background: rgba(26, 34, 54, 0.95);
+    backdrop-filter: blur(24px);
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
@@ -108,28 +113,39 @@ a {
     box-sizing: border-box;
   }
 
+  .modal-btns .btn-1 p {
+   padding: 10px;
+  }
+
+  .modal-btns .btn-1 p img {
+    padding: 0 0 0 15px;
+  }
+
   .modal-btns p {
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 25px;
     line-height: 27px;
     text-align: center;
     color: #1a2236;
   }
 
-  .modal-btns img {
-    width: 6vm;
-    padding: 15px 0 0 50px;
-    height: 6vh;
-    color: #1a2236;
-  }
 
   .modal-btns .btn-2 {
-    width: 60%;
+    width: 90%;
     height: 10vh;
     border: 1px solid #1a2236;
     box-sizing: border-box;
   }
+
+  .modal-btns .btn-2 p{
+    font-size: 25px;
+    padding: 15px;
+  }
+
+  .modal-btns .btn-2 p i{
+    padding: 0 0 0 10px;
+}
 
   .modal.is-visible {
     visibility: visible;
@@ -138,9 +154,7 @@ a {
 
   .modal-dialog {
     position: relative;
-    max-width: 100vmax;
     max-height: 100vh;
-    border-radius: 5px;
     background: #fff;
     overflow: auto;
     cursor: default;
@@ -148,11 +162,6 @@ a {
 
   .modal-dialog > * {
     padding: 1rem;
-  }
-
-  .modal-header,
-  .modal-footer {
-    background: #fff;
   }
 
   .modal-header {
@@ -276,15 +285,6 @@ a {
     font-size: inherit;
   }
 
-  /*
-      body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        font: 16px/1.5 sans-serif;
-      } */
-
   h3 {
     font-style: normal;
     font-weight: bold;
@@ -317,6 +317,8 @@ a {
   /* modal */
   .modal {
     position: fixed;
+    overflow: hidden;
+    top: 0;
     top: 0;
     left: 0;
     right: 0;
@@ -325,7 +327,8 @@ a {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    background: #1a2236;
+    background: rgba(26, 34, 54, 0.95);
+    backdrop-filter: blur(24px);
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
@@ -362,15 +365,11 @@ a {
   }
 
   .modal-carousel {
-    width: 100vmax;
-
-    /* height: 40vh; */
+    width: 100%;
   }
 
   .modal-carousel img {
     width: 100%;
-
-    /* height: 100vh; */
   }
 
   .modal-btns {
@@ -382,45 +381,55 @@ a {
   }
 
   .modal-btns .btn-1 {
-    width: 40%;
+    width: 29%;
     height: 10vh;
-
-    /* top: 827px; */
+    top: 827px;
     border: 1px solid #1a2236;
     box-sizing: border-box;
+  }
+
+  .modal-btns .btn-1 p {
+   padding: 10px;
+  }
+
+  .modal-btns .btn-1 p img {
+    padding: 0 0 0 15px;
   }
 
   .modal-btns p {
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 25px;
     line-height: 27px;
     text-align: center;
     color: #1a2236;
   }
 
-  .modal-btns img {
-    width: 6vm;
-    padding: 15px 0 0 50px;
-    height: 6vh;
-    color: #1a2236;
-  }
 
   .modal-btns .btn-2 {
-    width: 40%;
+    width: 29%;
     height: 10vh;
     border: 1px solid #1a2236;
     box-sizing: border-box;
   }
 
-  .modal.is-visible {
+  .modal-btns .btn-2 p{
+    font-size: 25px;
+    padding: 15px;
+  }
+
+  .modal-btns .btn-2 p i{
+    padding: 0 0 0 10px;
+}
+
+.modal.is-visible {
     visibility: visible;
     opacity: 1;
   }
 
   .modal-dialog {
     position: relative;
-    max-width: 100vmax;
+    max-width: 80vmax;
     max-height: 100vh;
     border-radius: 5px;
     background: #fff;
@@ -458,7 +467,7 @@ a {
   .modal-header .close-modal {
     font-size: 2rem;
     position: absolute;
-    margin: 15% 0 0 100%;
+    margin: 15% 0 0 95%;
   }
 
   .modal p + p {

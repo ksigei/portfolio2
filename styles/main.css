@@ -43,7 +43,7 @@ ul {
 }
 
 .cursor:hover {
-  background-color: rgb(46, 175, 158);
+  /* background-color: rgb(46, 175, 158); */
   font-size: larger;
   font-weight: bold;
 }
@@ -1096,14 +1096,6 @@ textarea::placeholder {
     padding: 3%;
   }
 
-  .item4 .list-languages ul li {
-    background: #98dede;
-    font-size: smaller;
-    width: 50%;
-    height: 40px;
-    padding: 3%;
-  }
-
   .item2 .list-languages ul li:last-child {
     width: 16%;
     height: 40px;
@@ -1186,6 +1178,50 @@ textarea::placeholder {
     background-position: 0 0;
   }
 
+  .item3 h3{
+    margin-top: 30px;
+    margin-bottom: 34px;
+    margin-left: 8%;
+    width: 100%;
+    height: 32px;
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 80%;
+    color: #fff;
+  }
+
+  .item3 .list-languages ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+  }
+
+  .item3 .list-languages ul li {
+    padding: 5px;
+    width: 30%;
+  }
+
+  .item3 .list-languages ul li:last-child {
+    width: 10%;
+    margin: 0;
+  }
+
+  .item3 .list-languages ul li:first-child {
+    width: 25%;
+  }
+
+  .item3 .project-view {
+    width: 35%;
+  }
+
+  .item3 .project-view i {
+    margin-left: 15px;
+    color: #1a2236;
+  }
+
+
   .item4 {
     grid-column: 4 / span 1;
     grid-row: 2/4;
@@ -1219,16 +1255,21 @@ textarea::placeholder {
     display: flex;
     list-style: none;
     margin-bottom: -40px;
+    width: 100%;
+  }
+
+  .item4 .list-languages ul li {
+    padding: 5px;
+    width: 35%;
   }
 
   .item4 .list-languages ul li:last-child {
-    width: 57px;
-    height: 40px;
-    margin-left: 5px;
+    width: 16%;
+    margin: 0;
   }
 
   .item4 .list-languages ul li:first-child {
-    height: 40px;
+    width: 30%;
   }
 
   .item4 .project-view i {
@@ -1272,6 +1313,54 @@ textarea::placeholder {
     background-position: 0 0;
   }
 
+  .item8 h3{
+    margin-top: 30px;
+    margin-bottom: 34px;
+    margin-left: 5%;
+    width: 100%;
+    height: 32px;
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 80%;
+    color: #fff;
+  }
+
+  .item8 .list-languages ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+  }
+
+  .item8 .list-languages ul li {
+    padding: 5px;
+    width: 30%;
+  }
+
+  .item8 .list-languages ul li:last-child {
+    width: 10%;
+    margin: 0;
+  }
+
+  .item8 .list-languages ul li:first-child {
+    width: 23%;
+  }
+
+  .item8 .project-view {
+    width: 35%;
+    color: #1a2236;
+  }
+
+  .item8 .project-view i {
+    margin-left: 15px;
+    color: #1a2236;
+  }
+
+  .item8 .langs-li-dsk p {
+    padding: 0 4%;
+  }
+
   #item7 {
     height: 87.71px;
     margin: -4% 0 0 67%;
@@ -1295,6 +1384,48 @@ textarea::placeholder {
   #item5-right img {
     margin-top: 290px;
     margin-left: 0;
+  }
+  .item5 h3{
+    margin-top: 30px;
+    margin-bottom: 34px;
+    margin-left: 5%;
+    width: 100%;
+    height: 32px;
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 80%;
+    color: #fff;
+  }
+
+  .item5 .list-languages ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+  }
+
+  .item5 .list-languages ul li {
+    padding: 5px;
+    width: 20%;
+  }
+
+  .item5 .list-languages ul li:last-child {
+    width: 13%;
+    margin: 0;
+  }
+
+  .item5 .list-languages ul li:first-child {
+    width: 15%;
+  }
+
+  .item5 .project-view {
+    width: 25%;
+  }
+
+  .item5 .project-view i {
+    margin-left: 15px;
+    color: #1a2236;
   }
 
   /* about */
