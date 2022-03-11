@@ -8,15 +8,13 @@ a {
   text-decoration: none;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
-  display: none;
+.example {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.example {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+.example::-webkit-scrollbar {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -54,7 +52,6 @@ a {
   /* modal */
   .modal {
     position: fixed;
-    top: 0;
     top: 0;
     left: 0;
     right: 0;
@@ -105,20 +102,20 @@ a {
     margin: 20px 0 0 0;
   }
 
+  .modal-description p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1a2236;
+  }
+
   .modal-btns .btn-1 {
     width: 90%;
     height: 10vh;
     top: 827px;
     border: 1px solid #1a2236;
     box-sizing: border-box;
-  }
-
-  .modal-btns .btn-1 p {
-   padding: 10px;
-  }
-
-  .modal-btns .btn-1 p img {
-    padding: 0 0 0 15px;
   }
 
   .modal-btns p {
@@ -130,6 +127,17 @@ a {
     color: #1a2236;
   }
 
+  .modal p + p {
+    margin-top: 1rem;
+  }
+
+  .modal-btns .btn-1 p {
+    padding: 10px;
+  }
+
+  .modal-btns .btn-1 p img {
+    padding: 0 0 0 15px;
+  }
 
   .modal-btns .btn-2 {
     width: 90%;
@@ -138,14 +146,14 @@ a {
     box-sizing: border-box;
   }
 
-  .modal-btns .btn-2 p{
+  .modal-btns .btn-2 p {
     font-size: 25px;
     padding: 15px;
   }
 
-  .modal-btns .btn-2 p i{
+  .modal-btns .btn-2 p i {
     padding: 0 0 0 10px;
-}
+  }
 
   .modal.is-visible {
     visibility: visible;
@@ -174,10 +182,6 @@ a {
     font-size: 1.5rem;
     position: absolute;
     margin: 20% 0 0 90%;
-  }
-
-  .modal p + p {
-    margin-top: 1rem;
   }
 }
 
@@ -319,7 +323,6 @@ a {
     position: fixed;
     overflow: hidden;
     top: 0;
-    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -388,14 +391,6 @@ a {
     box-sizing: border-box;
   }
 
-  .modal-btns .btn-1 p {
-   padding: 10px;
-  }
-
-  .modal-btns .btn-1 p img {
-    padding: 0 0 0 15px;
-  }
-
   .modal-btns p {
     font-style: normal;
     font-weight: 500;
@@ -405,6 +400,17 @@ a {
     color: #1a2236;
   }
 
+  .modal p + p {
+    margin-top: 1rem;
+  }
+
+  .modal-btns .btn-1 p {
+    padding: 10px;
+  }
+
+  .modal-btns .btn-1 p img {
+    padding: 0 0 0 15px;
+  }
 
   .modal-btns .btn-2 {
     width: 29%;
@@ -413,16 +419,16 @@ a {
     box-sizing: border-box;
   }
 
-  .modal-btns .btn-2 p{
+  .modal-btns .btn-2 p {
     font-size: 25px;
     padding: 15px;
   }
 
-  .modal-btns .btn-2 p i{
+  .modal-btns .btn-2 p i {
     padding: 0 0 0 10px;
-}
+  }
 
-.modal.is-visible {
+  .modal.is-visible {
     visibility: visible;
     opacity: 1;
   }
@@ -439,14 +445,6 @@ a {
 
   .modal-description {
     margin: 58px 20% 40px 20%;
-  }
-
-  .modal-description p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
-    color: #1a2236;
   }
 
   .modal-dialog > * {
@@ -468,9 +466,5 @@ a {
     font-size: 2rem;
     position: absolute;
     margin: 15% 0 0 95%;
-  }
-
-  .modal p + p {
-    margin-top: 1rem;
   }
 }
