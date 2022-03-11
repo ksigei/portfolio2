@@ -43,7 +43,6 @@ ul {
 }
 
 .cursor:hover {
-  /* background-color: rgb(46, 175, 158); */
   font-size: larger;
   font-weight: bold;
 }
