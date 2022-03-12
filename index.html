@@ -506,11 +506,12 @@
                     </div>
                     <form action="https://formspree.io/f/xbjwgkqr" id="myForm" method="post">
                       
-                        <input type="text" name="name" class="name" maxlength="30" placeholder="Your name" required>
-                        <input type="email" name="email" class="email" placeholder="Your email"  required>
+                        <input type="text" name="name" class="name" id="name" maxlength="30" placeholder="Your name" required>
+                        <input type="email" name="email" class="email" id="email" placeholder="Your email"  required>
                         <textarea name="message" class="msg" maxlength="500" placeholder="Enter your message here..." required></textarea>
-                        <button onclick="validateMail()" class="btn-collabo" type="submit" name="submit">Start collaboration</button>
+                        <button  class="btn-collabo" type="submit" name="submit">Start collaboration</button>
                     </form>
+                    <div id="error-message"></div>
                 </div>
                 <div class="img-cont-dsk-right display-none">
                     <img src="images/image-geometry_7.png" alt="image">
