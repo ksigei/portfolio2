@@ -16,5 +16,5 @@ function formValidate() {
 form.addEventListener('submit', (submitForm) => {
   if (!formValidate()) {
     submitForm.preventDefault();
-  
+  }
 });
