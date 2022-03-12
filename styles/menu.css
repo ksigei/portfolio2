@@ -47,14 +47,15 @@
   }
 
   .menu-dialog {
-    position: fixed;
+    position: absolute;
     background-image: url('../images/mobile-menu.svg');
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: 0 0;
-    max-height: 100vh;
-    height: 100vh;
-    width: 100vw;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     overflow: hidden;
     cursor: default;
   }
@@ -70,13 +71,16 @@
 
   .menu-header .close-menu {
     font-size: 1.5rem;
-    position: absolute;
+    position: relative;
     margin: 0 0 0 85%;
   }
 
   .menu-dialog .mobile-nav {
-    position: absolute;
-    margin: 40%;
+    position: relative;
+    top: 25%;
+    bottom: 0;
+    left: 0;
+    right: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
