@@ -62,21 +62,12 @@ textarea::placeholder {
   opacity: 0 !important;
 }
 
-#errorMessage {
-  align-self: center;
-  height: 40vh;
-  width: 100vm;
-  background-color: rgb(240, 6, 6);
-  opacity: 1;
-  transition: all 3s ease-in;
-  visibility: visible;
-  font-family: Poppins, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.8em;
-  letter-spacing: 0.04em;
-  color: #fff;
+#error-message {
+  height: 10vh;
+  justify-self: center;
   text-align: center;
+  background-color: #e0e0e0;
+  color: rgb(240, 6, 6);
 }
 
 @media (max-width: 768px) {
