@@ -18,4 +18,3 @@ form.addEventListener('submit', (submitForm) => {
     submitForm.preventDefault();
   }
 });
-

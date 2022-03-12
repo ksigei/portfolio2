@@ -28,4 +28,3 @@ for (let n = 0; n < formStorage.length; n += 1) {
     dataStorage();
   });
 }
-
