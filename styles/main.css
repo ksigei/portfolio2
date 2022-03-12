@@ -43,7 +43,6 @@ ul {
 }
 
 .cursor:hover {
-  background-color: rgb(46, 175, 158);
   font-size: larger;
   font-weight: bold;
 }
@@ -80,7 +79,7 @@ textarea::placeholder {
   text-align: center;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .display-none {
     display: none;
   }
@@ -162,9 +161,16 @@ textarea::placeholder {
     background: #1a2236;
   }
 
+  .header-img-bottom {
+    width: 320px;
+    height: 160px;
+    margin-left: 0;
+    margin-top: 32px;
+  }
+
   .btn-collabo {
-    width: 288px;
-    height: 50px;
+    width: 65%;
+    height: 10vh;
     background: #1a2236;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -175,13 +181,6 @@ textarea::placeholder {
     color: rgb(255 255 255);
     border: none;
     cursor: pointer;
-  }
-
-  .header-img-bottom {
-    width: 320px;
-    height: 160px;
-    margin-left: 0;
-    margin-top: 32px;
   }
 
   /* sections */
@@ -261,6 +260,7 @@ textarea::placeholder {
     display: flex;
     list-style: none;
     width: 300px;
+    margin-bottom: 20px;
   }
 
   .list-languages ul li {
@@ -303,7 +303,7 @@ textarea::placeholder {
   }
 
   .project-view img {
-    padding-left: 12px;
+    padding-left: 2px;
   }
 
   /* about */
@@ -544,7 +544,7 @@ textarea::placeholder {
 }
 
 /* desktop version min-992 */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .container {
     width: 100%;
   }
@@ -632,6 +632,33 @@ textarea::placeholder {
     height: 220px;
     margin-top: 192px;
     margin-bottom: 60px;
+  }
+
+  .item3 h3 {
+    margin-top: 30px;
+    margin-bottom: 34px;
+    margin-left: 8%;
+    width: 100%;
+    height: 32px;
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 80%;
+    color: #fff;
+  }
+
+  .item8 h3 {
+    margin-top: 30px;
+    margin-bottom: 34px;
+    margin-left: 10%;
+    width: 100%;
+    height: 32px;
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 80%;
+    color: #fff;
   }
 
   .header-my-name h3 {
@@ -984,7 +1011,7 @@ textarea::placeholder {
     font-family: "Playfair Display", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 20px;
     line-height: 80%;
     color: #fff;
   }
@@ -998,6 +1025,20 @@ textarea::placeholder {
     font-size: 110px;
     color: #1a2236;
     margin-bottom: 30px;
+  }
+
+  .item5 h3 {
+    margin-top: 30px;
+    margin-bottom: 34px;
+    margin-left: 5%;
+    width: 100%;
+    height: 32px;
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 80%;
+    color: #fff;
   }
 
   .header-my-name h3:hover {
@@ -1095,12 +1136,24 @@ textarea::placeholder {
     padding: 3%;
   }
 
+  .item3 .list-languages ul li {
+    padding: 5px;
+    width: 30%;
+  }
+
   .item4 .list-languages ul li {
-    background: #98dede;
-    font-size: smaller;
-    width: 50%;
-    height: 40px;
-    padding: 3%;
+    padding: 5px;
+    width: 35%;
+  }
+
+  .item8 .list-languages ul li {
+    padding: 5px;
+    width: 35%;
+  }
+
+  .item5 .list-languages ul li {
+    padding: 5px;
+    width: 20%;
   }
 
   .item2 .list-languages ul li:last-child {
@@ -1119,11 +1172,9 @@ textarea::placeholder {
     margin-left: 40px;
     background-color: #fff;
     border: 1px solid #fff;
-    width: 37%;
-    height: 44px;
+    width: 50%;
+    height: 10vh;
     padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
   }
 
   .project-view-union {
@@ -1138,7 +1189,7 @@ textarea::placeholder {
   }
 
   .project-view i {
-    margin-left: 15px;
+    margin-left: 1px;
     color: #1a2236;
   }
 
@@ -1177,16 +1228,38 @@ textarea::placeholder {
     display: flex;
   }
 
-  #img-dsk-3-1 img {
+  .img-dsk-3-1 {
     width: 100%;
-    height: 270px;
     left: 0;
     margin-top: 80px;
+    background-image: url('../images/Rectangle2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
-  #img-dsk-3 img {
+  .item3 .list-languages ul {
+    display: flex;
+    list-style: none;
     width: 100%;
-    height: 350px;
+  }
+
+  .item3 .list-languages ul li:last-child {
+    width: 10%;
+    margin: 0;
+  }
+
+  .item3 .list-languages ul li:first-child {
+    width: 25%;
+  }
+
+  .item3 .project-view {
+    width: 35%;
+  }
+
+  .item3 .project-view i {
+    margin-left: 15px;
+    color: #1a2236;
   }
 
   .item4 {
@@ -1199,7 +1272,7 @@ textarea::placeholder {
   }
 
   .item4 .project-lg-1-dsk {
-    height: 218px;
+    height: 45vh;
     background: linear-gradient(0deg, rgba(26, 34, 54, 0.95), rgba(26, 34, 54, 0.95));
     backdrop-filter: blur(24px);
     margin-top: 52px;
@@ -1213,7 +1286,7 @@ textarea::placeholder {
     font-family: "Playfair Display", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 80%;
     color: #fff;
   }
@@ -1222,16 +1295,16 @@ textarea::placeholder {
     display: flex;
     list-style: none;
     margin-bottom: -40px;
+    width: 100%;
   }
 
   .item4 .list-languages ul li:last-child {
-    width: 57px;
-    height: 40px;
-    margin-left: 5px;
+    width: 16%;
+    margin: 0;
   }
 
   .item4 .list-languages ul li:first-child {
-    height: 40px;
+    width: 30%;
   }
 
   .item4 .project-view i {
@@ -1243,11 +1316,14 @@ textarea::placeholder {
     padding: 0 4%;
   }
 
-  #item4-2 img {
+  #item4-2 {
     width: 100%;
-    height: 270px;
-    margin-top: -7px;
-    margin-left: 0;
+    left: 0;
+    margin-top: 80px;
+    background-image: url('../images/Rectangle5.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: -80px 0;
   }
 
   #item4-3 img {
@@ -1266,12 +1342,39 @@ textarea::placeholder {
   .item8 {
     grid-column: 3 / span 2;
     display: flex;
+    background-image: url('../images/Rectangle5.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
-  #item8 img {
-    height: 270px;
+  .item8 .list-languages ul {
+    display: flex;
+    list-style: none;
     width: 100%;
-    margin: -2% 0 0 4%;
+  }
+
+  .item8 .list-languages ul li:last-child {
+    width: 10%;
+    margin: 0;
+  }
+
+  .item8 .list-languages ul li:first-child {
+    width: 28%;
+  }
+
+  .item8 .project-view {
+    width: 50%;
+    color: #1a2236;
+  }
+
+  .item8 .project-view i {
+    margin-left: 15px;
+    color: #1a2236;
+  }
+
+  .item8 .langs-li-dsk p {
+    padding: 0 4%;
   }
 
   #item7 {
@@ -1285,15 +1388,42 @@ textarea::placeholder {
     margin-left: 28%;
   }
 
-  #item5-left img {
+  #item5-left {
     width: 100%;
-    height: 465px;
+    background-image: url('../images/Rectangle3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: -0 0;
     margin-left: 0;
   }
 
   #item5-right img {
     margin-top: 290px;
     margin-left: 0;
+  }
+
+  .item5 .list-languages ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+  }
+
+  .item5 .list-languages ul li:last-child {
+    width: 13%;
+    margin: 0;
+  }
+
+  .item5 .list-languages ul li:first-child {
+    width: 15%;
+  }
+
+  .item5 .project-view {
+    width: 25%;
+  }
+
+  .item5 .project-view i {
+    margin-left: 15px;
+    color: #1a2236;
   }
 
   /* about */
