@@ -62,21 +62,12 @@ textarea::placeholder {
   opacity: 0 !important;
 }
 
-#errorMessage {
-  align-self: center;
-  height: 40vh;
-  width: 100%;
-  background-color: rgb(240, 6, 6);
-  opacity: 1;
-  transition: all 3s ease-in;
-  visibility: visible;
-  font-family: Poppins, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.8em;
-  letter-spacing: 0.04em;
-  color: #fff;
+#error-message {
+  height: 10vh;
+  justify-self: center;
   text-align: center;
+  background-color: #e0e0e0;
+  color: rgb(240, 6, 6);
 }
 
 @media (max-width: 768px) {
@@ -86,7 +77,6 @@ textarea::placeholder {
 
   .header-top {
     display: flex;
-    flex-direction: row;
   }
 
   .desk-nav {
@@ -94,18 +84,19 @@ textarea::placeholder {
   }
 
   .header-img-left {
+    width: 100%;
     margin-left: 0;
   }
 
   #header-nav-lg {
-    width: 40px;
     height: 14px;
     margin-top: 16px;
-    margin-left: 174px;
+    margin-left: 50%;
     color: #c4c4c4;
   }
 
   #header-nav-lg a {
+    font-size: 30px;
     color: #c4c4c4;
   }
 
@@ -114,11 +105,12 @@ textarea::placeholder {
     flex-direction: column;
     margin-left: 16px;
     margin-right: 16px;
+    margin-top: 70px;
   }
 
   .header-my-name {
-    width: 220px;
-    height: 100px;
+    width: 22%;
+    height: 20vh;
     margin-bottom: 20px;
     margin-top: 36px;
   }
@@ -138,8 +130,8 @@ textarea::placeholder {
   }
 
   .header-about {
-    width: 288px;
-    height: 126px;
+    width: 100%;
+    height: 20vh;
     margin-top: 20px;
     margin-bottom: 40px;
   }
@@ -154,22 +146,8 @@ textarea::placeholder {
     color: #1a2236;
   }
 
-  .header-btn {
-    width: 288px;
-    height: 50px;
-    margin-left: 16px;
-    background: #1a2236;
-  }
-
-  .header-img-bottom {
-    width: 320px;
-    height: 160px;
-    margin-left: 0;
-    margin-top: 32px;
-  }
-
   .btn-collabo {
-    width: 65%;
+    width: 100%;
     height: 10vh;
     background: #1a2236;
     font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -183,6 +161,19 @@ textarea::placeholder {
     cursor: pointer;
   }
 
+  .header-img-bottom {
+    justify-content: center;
+    width: 100%;
+    height: 26vh;
+    margin-left: 0;
+    margin-top: 32px;
+  }
+
+  .header-img-bottom img {
+    width: 100%;
+    height: 26vh;
+  }
+
   /* sections */
   .projects {
     display: grid;
@@ -190,6 +181,7 @@ textarea::placeholder {
     gap: 0;
     padding: 0;
     margin-top: 40px;
+    width: 100%;
   }
 
   .desk-projects {
@@ -197,7 +189,6 @@ textarea::placeholder {
   }
 
   .title {
-    height: 50px;
     margin-left: 16px;
     font-family: Playfair Display, Poppins, Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -211,12 +202,11 @@ textarea::placeholder {
   .projects-wrapper {
     display: flex;
     flex-direction: column;
-    height: 342px;
   }
 
   .project-img {
-    width: 320px;
-    height: 186px;
+    width: 100%;
+    max-height: 40vh;
     margin-left: 0;
     border: 0.333333px solid rgba(255, 255, 255, 0.1);
   }
@@ -224,8 +214,8 @@ textarea::placeholder {
   .project-lg {
     display: flex;
     flex-direction: column;
-    width: 320px;
-    height: 156px;
+    width: 100%;
+    height: 40vh;
     margin-top: -6px;
     background: #1a2236;
     border: 0.333333px solid rgba(255, 255, 255, 0.1);
@@ -235,8 +225,7 @@ textarea::placeholder {
   .project-lg-1 {
     display: flex;
     flex-direction: column;
-    width: 264px;
-    height: 156px;
+    height: 40vh;
     margin-left: 20px;
   }
 
@@ -252,40 +241,36 @@ textarea::placeholder {
     margin-left: 0;
   }
 
-  .list-languages {
-    margin-left: -5px;
-  }
-
   .list-languages ul {
     display: flex;
     list-style: none;
-    width: 300px;
     margin-bottom: 20px;
+    width: 100%;
   }
 
   .list-languages ul li {
     background: #98dede;
     font-size: smaller;
-    height: 25px;
-    width: 90px;
-    margin: 0 5px;
+    height: 4vh;
+    width: 31%;
+    margin: 10px 5px 10px;
     padding: 3px;
   }
 
   .list-languages ul li:first-child {
-    width: 75px;
+    width: 25%;
   }
 
   .list-languages ul li:last-child {
-    width: 70px;
+    width: 25%;
   }
 
   .project-view {
     margin-top: 20px;
     background-color: #1a2236;
     border: 1px solid #fff;
-    width: 178px;
-    height: 44px;
+    width: 65%;
+    height: 8vh;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -317,12 +302,12 @@ textarea::placeholder {
   }
 
   .about-me {
-    width: 288px;
-    height: 278px;
+    width: 100%;
+    height: 45vh;
   }
 
   .about-me h3 {
-    width: 134px;
+    width: 80%;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -333,8 +318,8 @@ textarea::placeholder {
 
   .about-me p {
     margin-top: 20px;
-    width: 288px;
-    height: 126px;
+    width: 100%;
+    height: 20vh;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -344,16 +329,14 @@ textarea::placeholder {
   }
 
   #about-view {
-    width: 288px;
-    height: 50px;
+    width: 100%;
+    height: 10vh;
     background: #1a2236;
     margin-top: 32px;
     border: none;
   }
 
   .project-view-btn {
-    width: 86px;
-    height: 24px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -364,8 +347,6 @@ textarea::placeholder {
   }
 
   .cv-btn {
-    width: 24px;
-    height: 18px;
     margin-left: 20px;
     box-sizing: border-box;
   }
@@ -379,7 +360,7 @@ textarea::placeholder {
   .langs {
     display: flex;
     flex-direction: column;
-    width: 289px;
+    width: 100%;
     background: #1c528a;
     margin-top: 20px;
   }
@@ -407,7 +388,7 @@ textarea::placeholder {
   .frameworks {
     display: flex;
     flex-direction: column;
-    width: 289px;
+    width: 100%;
     background: #e2505c;
     margin-top: 16px;
   }
@@ -415,21 +396,21 @@ textarea::placeholder {
   .skills {
     display: flex;
     flex-direction: column;
-    width: 289px;
+    width: 100%;
     background: #febf52;
     margin-top: 16px;
   }
 
   .langs-section img {
-    margin-left: 193px;
-    width: 96px;
-    height: 80px;
+    margin-left: 55%;
+    width: 50%;
+    height: 20vh;
   }
 
   /* footer and contact */
   footer {
     margin-top: 50px;
-    width: 320px;
+    width: 100%;
     height: 813px;
     margin-left: -2px;
     background: #f9f9fa;
@@ -438,8 +419,7 @@ textarea::placeholder {
   .contact {
     display: flex;
     flex-direction: column;
-    margin-left: 18px;
-    margin-right: 14px;
+    margin: 8%;
     margin-top: 32px;
   }
 
@@ -448,9 +428,9 @@ textarea::placeholder {
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
-    line-height: 100%;
     color: #1a2236;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .contact-description p {
@@ -462,6 +442,7 @@ textarea::placeholder {
     letter-spacing: -0.01em;
     color: #1a2236;
     margin-bottom: 32px;
+    text-align: center;
   }
 
   form {
@@ -473,7 +454,7 @@ textarea::placeholder {
     border: 1px solid #dfdfe0;
     box-sizing: border-box;
     border-radius: 4px;
-    width: 288px;
+    width: 100%;
     height: 52px;
   }
 
@@ -482,13 +463,13 @@ textarea::placeholder {
     border: 1px solid #dfdfe0;
     box-sizing: border-box;
     border-radius: 4px;
-    width: 288px;
+    width: 100%;
     height: 52px;
     margin-top: 8px;
   }
 
   form textarea {
-    width: 288px;
+    width: 100%;
     height: 112px;
     background: #fff;
     border: 1px solid #dfdfe0;
@@ -499,19 +480,21 @@ textarea::placeholder {
   }
 
   .social-footer {
-    width: 320px;
+    width: 100%;
     height: 150px;
     margin-left: 0;
     margin-top: 44px;
     margin-bottom: 0;
     background: #1a2236;
+    justify-content: center;
   }
 
   .social-footer ul {
     display: flex;
     list-style-type: none;
-    width: 253px;
-    margin-right: 100px;
+    width: 80%;
+
+    /* margin-right: 100px; */
     align-content: center;
     align-self: center;
   }
