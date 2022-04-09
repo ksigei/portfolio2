@@ -2,92 +2,92 @@
 
 const htmlArrays = [
   {
-    image: "./images/screenshots/ss4.png",
-    name: "World crypto-currency summit",
-    demo: "https://ksigei.github.io/portfolio2/",
-    source: "https://github.com/ksigei/portfolio2",
-    description: "Html, css capstone project",
+    image: './images/screenshots/ss4.png',
+    name: 'World crypto-currency summit',
+    demo: 'https://ksigei.github.io/portfolio2/',
+    source: 'https://github.com/ksigei/portfolio2',
+    description: 'Html, css capstone project',
     langs: {
-      html: "HTML/CSS",
-      ruby: "Ruby on Rails",
-      js: "JavaScript",
+      html: 'HTML/CSS',
+      ruby: 'Ruby on Rails',
+      js: 'JavaScript',
     },
   },
   {
-    image: "./images/screenshots/ss4.png",
-    name: "Project name goes here",
-    demo: "https://ksigei.github.io/portfolio2/",
-    source: "https://github.com/ksigei/portfolio2",
-    description: "Html, css capstone project",
+    image: './images/screenshots/ss4.png',
+    name: 'Project name goes here',
+    demo: 'https://ksigei.github.io/portfolio2/',
+    source: 'https://github.com/ksigei/portfolio2',
+    description: 'Html, css capstone project',
     langs: {
-      html: "HTML/CSS",
-      ruby: "Ruby on Rails",
-      js: "JavaScript",
+      html: 'HTML/CSS',
+      ruby: 'Ruby on Rails',
+      js: 'JavaScript',
     },
   },
   {
-    image: "./images/screenshots/ss4.png",
-    name: "Project name goes here",
-    demo: "https://ksigei.github.io/portfolio2/",
-    source: "https://github.com/ksigei/portfolio2",
-    description: "Html, css capstone project",
+    image: './images/screenshots/ss4.png',
+    name: 'Project name goes here',
+    demo: 'https://ksigei.github.io/portfolio2/',
+    source: 'https://github.com/ksigei/portfolio2',
+    description: 'Html, css capstone project',
     langs: {
-      html: "HTML/CSS",
-      ruby: "Ruby on Rails",
-      js: "JavaScript",
+      html: 'HTML/CSS',
+      ruby: 'Ruby on Rails',
+      js: 'JavaScript',
     },
   },
   {
-    image: "./images/screenshots/ss4.png",
-    name: "Project name goes here",
-    demo: "https://ksigei.github.io/portfolio2/",
-    source: "https://github.com/ksigei/portfolio2",
-    description: "Html, css capstone project",
+    image: './images/screenshots/ss4.png',
+    name: 'Project name goes here',
+    demo: 'https://ksigei.github.io/portfolio2/',
+    source: 'https://github.com/ksigei/portfolio2',
+    description: 'Html, css capstone project',
     langs: {
-      html: "HTML/CSS",
-      ruby: "Ruby on Rails",
-      js: "JavaScript",
+      html: 'HTML/CSS',
+      ruby: 'Ruby on Rails',
+      js: 'JavaScript',
     },
   },
   {
-    image: "./images/screenshots/ss4.png",
-    name: "Project name goes here",
-    demo: "https://ksigei.github.io/portfolio2/",
-    source: "https://github.com/ksigei/portfolio2",
-    description: "Html, css capstone project",
+    image: './images/screenshots/ss4.png',
+    name: 'Project name goes here',
+    demo: 'https://ksigei.github.io/portfolio2/',
+    source: 'https://github.com/ksigei/portfolio2',
+    description: 'Html, css capstone project',
     langs: {
-      html: "HTML/CSS",
-      ruby: "Ruby on Rails",
-      js: "JavaScript",
+      html: 'HTML/CSS',
+      ruby: 'Ruby on Rails',
+      js: 'JavaScript',
     },
   },
   {
-    image: "./images/screenshots/ss4.png",
-    name: "Project name goes here",
-    demo: "https://ksigei.github.io/portfolio2/",
-    source: "https://github.com/ksigei/portfolio2",
-    description: "Html, css capstone project",
+    image: './images/screenshots/ss4.png',
+    name: 'Project name goes here',
+    demo: 'https://ksigei.github.io/portfolio2/',
+    source: 'https://github.com/ksigei/portfolio2',
+    description: 'Html, css capstone project',
     langs: {
-      html: "HTML/CSS",
-      ruby: "Ruby on Rails",
-      js: "JavaScript",
+      html: 'HTML/CSS',
+      ruby: 'Ruby on Rails',
+      js: 'JavaScript',
     },
   },
   {
-    image: "./images/screenshots/ss4.png",
-    name: "Project name goes here",
-    demo: "https://ksigei.github.io/portfolio2/",
-    source: "https://github.com/ksigei/portfolio2",
-    description: "Html, css capstone project",
+    image: './images/screenshots/ss4.png',
+    name: 'Project name goes here',
+    demo: 'https://ksigei.github.io/portfolio2/',
+    source: 'https://github.com/ksigei/portfolio2',
+    description: 'Html, css capstone project',
     langs: {
-      html: "HTML/CSS",
-      ruby: "Ruby on Rails",
-      js: "JavaScript",
+      html: 'HTML/CSS',
+      ruby: 'Ruby on Rails',
+      js: 'JavaScript',
     },
   },
 ];
 htmlArrays.forEach((item) => {
- const html = ` 
+  const html = ` 
      <section class="modal-content">
        <h3>${item.name}</h3> 
        <div class="list-languages">
@@ -121,38 +121,36 @@ htmlArrays.forEach((item) => {
            </div>
        </div>
        </section>`;
-const projects_view = document.getElementById("m_dialog");
-projects_view.innerHTML = html;
+  const projectsView = document.getElementById('m_dialog');
+  projectsView.innerHTML = html;
 });
 
-
-const openEls = document.querySelectorAll("[data-open]");
-const closeEls = document.querySelectorAll("[data-close]");
-const isVisible = "is-visible";
+const openEls = document.querySelectorAll('[data-open]');
+const closeEls = document.querySelectorAll('[data-close]');
+const isVisible = 'is-visible';
 
 openEls.forEach((el) => {
-  el.addEventListener("click", function () {
+  el.addEventListener('click', function () {
     const modalId = this.dataset.open;
     document.getElementById(modalId).classList.add(isVisible);
   });
 });
 
 closeEls.forEach((el) => {
-  el.addEventListener("click", function () {
+  el.addEventListener('click', function () {
     this.parentElement.parentElement.parentElement.classList.remove(isVisible);
   });
 });
 
-document.addEventListener("click", (e) => {
-  if (e.target === document.querySelector(".modal.is-visible")) {
-    document.querySelector(".modal.is-visible").classList.remove(isVisible);
+document.addEventListener('click', (e) => {
+  if (e.target === document.querySelector('.modal.is-visible')) {
+    document.querySelector('.modal.is-visible').classList.remove(isVisible);
   }
 });
 
-document.addEventListener("keyup", (e) => {
+document.addEventListener('keyup', (e) => {
   // if we press the ESC
-  if (e.key === "Escape" && document.querySelector(".modal.is-visible")) {
-    document.querySelector(".modal.is-visible").classList.remove(isVisible);
+  if (e.key === 'Escape' && document.querySelector('.modal.is-visible')) {
+    document.querySelector('.modal.is-visible').classList.remove(isVisible);
   }
 });
-
