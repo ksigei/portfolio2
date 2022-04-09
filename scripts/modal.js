@@ -1,11 +1,12 @@
-let htmlElements = '';
+// let htmlElements = '';
 
-const projects = [
+const htmlArrays = [
   {
-    id: 'projects-wrapper',
-    name: 'Project name goes here',
+    image: './images/screenshots/ss4.png',
+    name: 'World crypto-currency summit',
     demo: 'https://ksigei.github.io/portfolio2/',
     source: 'https://github.com/ksigei/portfolio2',
+    description: 'Html, css capstone project',
     langs: {
       html: 'HTML/CSS',
       ruby: 'Ruby on Rails',
@@ -13,10 +14,11 @@ const projects = [
     },
   },
   {
-    id: 'projects-wrapper',
+    image: './images/screenshots/ss4.png',
     name: 'Project name goes here',
     demo: 'https://ksigei.github.io/portfolio2/',
     source: 'https://github.com/ksigei/portfolio2',
+    description: 'Html, css capstone project',
     langs: {
       html: 'HTML/CSS',
       ruby: 'Ruby on Rails',
@@ -24,10 +26,11 @@ const projects = [
     },
   },
   {
-    id: 'projects-wrapper',
+    image: './images/screenshots/ss4.png',
     name: 'Project name goes here',
     demo: 'https://ksigei.github.io/portfolio2/',
     source: 'https://github.com/ksigei/portfolio2',
+    description: 'Html, css capstone project',
     langs: {
       html: 'HTML/CSS',
       ruby: 'Ruby on Rails',
@@ -35,10 +38,11 @@ const projects = [
     },
   },
   {
-    id: 'projects-wrapper',
+    image: './images/screenshots/ss4.png',
     name: 'Project name goes here',
     demo: 'https://ksigei.github.io/portfolio2/',
     source: 'https://github.com/ksigei/portfolio2',
+    description: 'Html, css capstone project',
     langs: {
       html: 'HTML/CSS',
       ruby: 'Ruby on Rails',
@@ -46,10 +50,11 @@ const projects = [
     },
   },
   {
-    id: 'projects-wrapper',
+    image: './images/screenshots/ss4.png',
     name: 'Project name goes here',
     demo: 'https://ksigei.github.io/portfolio2/',
     source: 'https://github.com/ksigei/portfolio2',
+    description: 'Html, css capstone project',
     langs: {
       html: 'HTML/CSS',
       ruby: 'Ruby on Rails',
@@ -57,10 +62,11 @@ const projects = [
     },
   },
   {
-    id: 'projects-wrapper',
+    image: './images/screenshots/ss4.png',
     name: 'Project name goes here',
     demo: 'https://ksigei.github.io/portfolio2/',
     source: 'https://github.com/ksigei/portfolio2',
+    description: 'Html, css capstone project',
     langs: {
       html: 'HTML/CSS',
       ruby: 'Ruby on Rails',
@@ -68,10 +74,11 @@ const projects = [
     },
   },
   {
-    id: 'projects-wrapper',
+    image: './images/screenshots/ss4.png',
     name: 'Project name goes here',
     demo: 'https://ksigei.github.io/portfolio2/',
     source: 'https://github.com/ksigei/portfolio2',
+    description: 'Html, css capstone project',
     langs: {
       html: 'HTML/CSS',
       ruby: 'Ruby on Rails',
@@ -79,54 +86,44 @@ const projects = [
     },
   },
 ];
-
-for (let i = 0; i <= 6; i += 1) {
-  htmlElements
-   += ` 
-   <div class="modal" id="modal2" data-animation="mixInAnimations">
-   <div class="modal-dialog">
-     <header class="modal-header">
-       <button class="close-modal" aria-label="close modal" data-close>
-         ✕  
-       </button>
-     </header>
+htmlArrays.forEach((item) => {
+  const html = ` 
      <section class="modal-content">
-       <h3>Project name goes here</h3> 
+       <h3>${item.name}</h3> 
        <div class="list-languages">
            <ul>
-               <li class="langs-li-dsk cursor"><p>${projects[projects.length - 1].html}</p></li>
-               <li class="langs-li-dsk cursor"><p>${projects[projects.length - 1].ruby}</p></li>
-               <li class="langs-li-dsk cursor"><p>${projects[projects.length - 1].js}</p></li>
+               <li class="langs-li-dsk cursor"><p>${item.langs.html}</p></li>
+               <li class="langs-li-dsk cursor"><p>${item.langs.js}</p></li>
+               <li class="langs-li-dsk cursor"><p>${item.langs.ruby}</p></li>
            </ul>
        </div>
        <div class="modal-carousel">
-           <img src="./images/carousel.svg" alt="">
+           <img src="${item.image}" alt="">
        </div>
        
        <div class="modal-description">
            <p>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+           ${item.description}
            </p>
 
        </div>
        
        <div class="modal-btns">
            <div class="btn-1">
-               <a href="#">
+               <a href="${item.demo}">
                    <p>See Live <span><img src="./images/resume.png" alt="image"/></span></p>
                </a>
            </div>
            <div class="btn-1">
-               <a href="#">
+               <a href="${item.source}">
                    <p>See Source <span><img src="./images/github.png" alt="image"/></span></p>
                </a>
            </div>
        </div>
-       </section>
-     
-   </div>
-</div>`;
-}
+       </section>`;
+  const projectsView = document.getElementById('m_dialog');
+  projectsView.innerHTML = html;
+});
 
 const openEls = document.querySelectorAll('[data-open]');
 const closeEls = document.querySelectorAll('[data-close]');
@@ -135,9 +132,7 @@ const isVisible = 'is-visible';
 openEls.forEach((el) => {
   el.addEventListener('click', function () {
     const modalId = this.dataset.open;
-    document
-      .getElementById(modalId)
-      .classList.add(isVisible);
+    document.getElementById(modalId).classList.add(isVisible);
   });
 });
 
@@ -159,6 +154,3 @@ document.addEventListener('keyup', (e) => {
     document.querySelector('.modal.is-visible').classList.remove(isVisible);
   }
 });
-
-const container = document.getElementById('#projects');
-container.innerHTML = htmlElements;
