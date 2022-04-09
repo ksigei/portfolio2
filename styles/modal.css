@@ -8,12 +8,11 @@ a {
   text-decoration: none;
 }
 
-.example {
+* {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
-.example::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none;
 }
 
@@ -179,6 +178,7 @@ a {
   }
 
   .modal-header .close-modal {
+    cursor: pointer;
     font-size: 1.5rem;
     position: absolute;
     margin: 20% 0 0 90%;
@@ -373,6 +373,7 @@ a {
 
   .modal-carousel img {
     width: 100%;
+    height: 40vh;
   }
 
   .modal-btns {
